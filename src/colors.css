@@ -1,0 +1,25 @@
+:root {
+  --dark-primary: #18181b;
+  --dark-secondary: #27272a;
+  --dark-accent: #3f3f46;
+
+  --light-primary: #fafafa;
+  --light-secondary: #e5e5e5;
+  --light-accent: #d4d4d4;
+
+  --danger-primary: rgb(239, 68, 68);
+  --danger-secondary: rgba(239, 68, 68, 0.1);
+  --danger-accent: rgb(239, 68, 68);
+
+  --success-primary: rgb(34, 197, 94);
+  --success-secondary: rgba(34, 197, 94, 0.1);
+  --success-accent: rgb(34, 197, 94);
+
+  --warning-primary: rgb(234, 179, 8);
+  --warning-secondary: rgba(234, 179, 8, 0.1);
+  --warning-accent: rgb(234, 179, 8);
+
+  --brand-primary: rgb(59, 130, 246);
+  --brand-secondary: rgb(37, 99, 235);
+  --brand-accent: rgba(59, 130, 246, 0.2);
+}
