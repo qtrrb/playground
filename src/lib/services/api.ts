@@ -1,7 +1,7 @@
 const endpoint = import.meta.env.VITE_ENDPOINT;
 
 export async function getAvailableModels(): Promise<string[]> {
-  const url = endpoint + "models";
+  const url = endpoint + "/v1/models";
   const response = await fetch(url);
   if (!response.ok) {
     throw new Error(`API request failed with status ${response.status}`);
@@ -19,7 +19,7 @@ export async function* callApiStream(
   topP: number,
   repetition: number
 ): AsyncGenerator<string> {
-  const url = endpoint + "completion_stream";
+  const url = endpoint + "/v1/completion_stream";
   const response = await fetch(url, {
     method: "POST",
     headers: {
@@ -61,7 +61,7 @@ export async function callApi(
   topP: number,
   repetition: number
 ): Promise<string> {
-  const url = endpoint + "completion";
+  const url = endpoint + "/v1/completion";
   const response = await fetch(url, {
     method: "POST",
     headers: {
