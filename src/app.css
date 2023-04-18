@@ -17,8 +17,6 @@
 }
 
 body {
-  transition-property: background-color, color;
-  transition: 0.1s;
   margin: 0;
 
   color: var(--dark-primary);
