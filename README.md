@@ -34,3 +34,6 @@ or
 npm run build
 serve dist
 ```
+## Acknowledgements
+
+Icons from [Heroicons](https://heroicons.com/) ([License](https://github.com/tailwindlabs/heroicons/blob/master/LICENSE)) by Tailwind Labs
