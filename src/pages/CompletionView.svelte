@@ -35,7 +35,7 @@
       }
       buttonDisabledState = false;
     } catch (error) {
-      useToast(`API request failed: ${error.message}`);
+      useToast("Something went wrong.");
       buttonDisabledState = false;
     }
   }
@@ -55,7 +55,7 @@
       text += generatedText;
       buttonDisabledState = false;
     } catch (error) {
-      useToast(`API request failed: ${error.message}`);
+      useToast("Something went wrong.");
       buttonDisabledState = false;
     }
   }
@@ -65,7 +65,7 @@
       models = await getAvailableModels();
       currentModel = models[0];
     } catch (error) {
-      useToast(`API request failed: ${error.message}`);
+      useToast("Something went wrong.");
     }
   }
 
