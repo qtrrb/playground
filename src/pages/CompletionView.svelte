@@ -199,7 +199,9 @@
   main {
     display: flex;
     flex-grow: 1;
-    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 90rem;
     height: calc(100vh - 3.5rem);
   }
 
