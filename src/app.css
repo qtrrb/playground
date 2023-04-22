@@ -27,3 +27,18 @@ body {
   color: var(--light-primary);
   background-color: var(--dark-primary);
 }
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 9999px;
+
+  background-color: var(--light-accent);
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background-color: var(--dark-accent);
+}
