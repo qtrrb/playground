@@ -56,6 +56,10 @@
     cursor: not-allowed;
   }
 
+  :global(option) { 
+    background-color: var(--light-primary);
+  }
+
   :global(.dark) select {
     background-color: var(--dark-primary);
     color: var(--light-primary);
@@ -71,4 +75,9 @@
   :global(.dark) select:focus:enabled {
     outline-color: var(--dark-secondary);
   }
+
+  :global(.dark) :global(option) { 
+    background-color: var(--dark-primary);
+  }
+
 </style>
