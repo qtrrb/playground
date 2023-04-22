@@ -1,5 +1,5 @@
 <script lang="ts">
-  export let htmlFor: string = "";
+  export let htmlFor = "";
 </script>
 
 <label for={htmlFor}><slot /></label>

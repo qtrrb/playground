@@ -1,11 +1,11 @@
 <script lang="ts">
-  export let name: string = "";
-  export let id: string = "";
-  export let min: number = 1;
-  export let max: number = 100;
-  export let step: number = 1;
-  export let value: number = 50;
-  export let disabled: boolean = false;
+  export let name = "";
+  export let id = "";
+  export let min = 1;
+  export let max = 100;
+  export let step = 1;
+  export let value = 50;
+  export let disabled = false;
   export let variant: "default" | "brand" = "default";
 </script>
 

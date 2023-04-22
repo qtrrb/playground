@@ -1,8 +1,8 @@
 <script lang="ts">
-  export let name: string = "";
-  export let id: string = "";
-  export let checked: boolean = false;
-  export let disabled: boolean = false;
+  export let name = "";
+  export let id = "";
+  export let checked = false;
+  export let disabled = false;
   export let variant: "default" | "brand" = "default";
 </script>
 

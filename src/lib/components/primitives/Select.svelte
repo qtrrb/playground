@@ -1,9 +1,9 @@
 <script lang="ts">
-  export let name: string = "";
-  export let id: string = "";
+  export let name = "";
+  export let id = "";
   export let placeholder = "";
   export let value = "";
-  export let disabled: boolean = false;
+  export let disabled = false;
 </script>
 
 <select bind:value {name} {disabled} {id} aria-label={id}>

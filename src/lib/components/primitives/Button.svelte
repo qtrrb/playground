@@ -1,6 +1,6 @@
 <script lang="ts">
-  export let name: string = "";
-  export let id: string = "";
+  export let name = "";
+  export let id = "";
   export let variant:
     | "solid"
     | "outline"
@@ -9,8 +9,8 @@
     | "danger"
     | "brand" = "solid";
   export let size: "lg" | "md" | "sm" = "md";
-  export let href: string = "";
-  export let disabled: boolean = false;
+  export let href = "";
+  export let disabled = false;
 </script>
 
 {#if href}

@@ -79,13 +79,13 @@
 
   let text: string;
   let models: string[] = [];
-  let currentModel: string = "";
-  let temperature: number = 0.9;
+  let currentModel = "";
+  let temperature = 0.9;
   let stop: string;
-  let length: number = 256;
-  let topP: number = 1;
-  let repetition: number = 1;
-  let stream: boolean = true;
+  let length = 256;
+  let topP = 1;
+  let repetition = 1;
+  let stream = true;
 
   let buttonDisabledState = false;
   onMount(async () => {

@@ -1,7 +1,7 @@
 <script setup lang="ts">
   export let tabs: Array<string>;
   export let value: string = tabs[0];
-  export let disabled: boolean = false;
+  export let disabled = false;
   export let variant: "default" | "brand" = "default";
 </script>
 

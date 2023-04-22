@@ -5,7 +5,7 @@
   export let message = "";
   export let variant: "danger" | "warning" | "success" = "danger";
 
-  let visible: boolean = false;
+  let visible = false;
 
   export function createToast() {
     new this({
