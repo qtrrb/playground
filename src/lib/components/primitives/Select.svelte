@@ -39,7 +39,7 @@
     border-color: var(--light-accent);
     background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='2' stroke='%23d4d4d4' ><path stroke-linecap='round' stroke-linejoin='round' d='M19.5 8.25l-7.5 7.5-7.5-7.5'/></svg>")
       no-repeat;
-    background-position: 98%;
+    background-position: right 0.5rem center;
     background-repeat: no-repeat;
     background-size: 1rem 1rem;
   }
@@ -56,7 +56,7 @@
     cursor: not-allowed;
   }
 
-  :global(option) { 
+  :global(option) {
     background-color: var(--light-primary);
   }
 
@@ -67,7 +67,7 @@
 
     background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='2' stroke='%233f3f46' ><path stroke-linecap='round' stroke-linejoin='round' d='M19.5 8.25l-7.5 7.5-7.5-7.5'/></svg>")
       no-repeat;
-    background-position: 98%;
+    background-position: right 0.5rem center;
     background-repeat: no-repeat;
     background-size: 1rem 1rem;
   }
@@ -76,8 +76,7 @@
     outline-color: var(--dark-secondary);
   }
 
-  :global(.dark) :global(option) { 
+  :global(.dark) :global(option) {
     background-color: var(--dark-primary);
   }
-
 </style>
