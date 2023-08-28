@@ -1,12 +1,9 @@
 <script lang="ts">
-  export let name = "";
-  export let id = "";
   export let placeholder = "";
   export let value = "";
-  export let disabled = false;
 </script>
 
-<select bind:value {name} {disabled} {id} aria-label={id}>
+<select bind:value {...$$restProps}>
   {#if placeholder}
     <option value="" disabled selected>{placeholder}</option>
   {/if}

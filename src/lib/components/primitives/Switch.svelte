@@ -1,13 +1,11 @@
 <script lang="ts">
-  export let name = "";
-  export let id = "";
   export let checked = false;
   export let disabled = false;
   export let variant: "default" | "brand" = "default";
 </script>
 
 <label class="switch {disabled ? 'disabled' : 'enabled'}">
-  <input type="checkbox" bind:checked {disabled} {name} {id} aria-label={id} />
+  <input type="checkbox" bind:checked {disabled} {...$$restProps} />
   <span class="slider round {variant}" />
 </label>
 

@@ -1,11 +1,5 @@
 <script lang="ts">
-  export let name = "";
-  export let id = "";
-  export let min = 1;
-  export let max = 100;
-  export let step = 1;
   export let value = 50;
-  export let disabled = false;
   export let variant: "default" | "brand" = "default";
 </script>
 
@@ -13,13 +7,7 @@
   type="range"
   bind:value
   class={variant}
-  {min}
-  {max}
-  {step}
-  {disabled}
-  {name}
-  {id}
-  aria-label={id}
+  {...$$restProps}
 />
 
 <style>

@@ -1,6 +1,4 @@
 <script lang="ts">
-  export let name = "";
-  export let id = "";
   export let variant:
     | "solid"
     | "outline"
@@ -10,7 +8,6 @@
     | "brand" = "solid";
   export let size: "lg" | "md" | "sm" = "md";
   export let href = "";
-  export let disabled = false;
 </script>
 
 {#if href}
@@ -18,10 +15,7 @@
 {:else}
   <button
     class="{size} {variant}"
-    {disabled}
-    {name}
-    {id}
-    aria-label={id}
+    {...$$restProps}
     on:click><slot /></button
   >
 {/if}

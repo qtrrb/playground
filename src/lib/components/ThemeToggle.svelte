@@ -28,7 +28,11 @@
   });
 </script>
 
-<Button variant="plain" on:click={() => (darkMode = !darkMode)}>
+<Button
+  aria-label="theme"
+  variant="plain"
+  on:click={() => (darkMode = !darkMode)}
+>
   {#if darkMode}
     <Sun />
   {:else}

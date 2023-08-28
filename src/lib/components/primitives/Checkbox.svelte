@@ -1,19 +1,13 @@
 <script lang="ts">
-  export let name = "";
-  export let id = "";
   export let checked = false;
-  export let disabled = false;
   export let variant: "default" | "brand" = "default";
 </script>
 
 <input
   class={variant}
   type="checkbox"
-  {name}
   bind:checked
-  {disabled}
-  {id}
-  aria-label={id}
+  {...$$restProps}
 />
 
 <style>

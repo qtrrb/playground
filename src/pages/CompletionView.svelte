@@ -99,6 +99,7 @@
       bind:value={text}
       resize={false}
       fullHeight
+      aria-label="completion"
       id="completion-text-area"
     />
     <div class="submit-container">

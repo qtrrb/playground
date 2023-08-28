@@ -35,7 +35,7 @@
     <Button size="sm">Small</Button>
   </div>
   <div class="components-container">
-    <Button href="#">Solid</Button>
+    <Button href="#">Solid link</Button>
     <Button variant="outline" href="#">Outline link</Button>
     <Button variant="soft" href="#">Soft link</Button>
     <Button variant="plain" href="#">Plain link</Button>

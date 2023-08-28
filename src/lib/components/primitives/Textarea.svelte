@@ -1,12 +1,7 @@
 <script lang="ts">
-  export let name = "";
-  export let id = "";
-  export let placeholder = "";
   export let value = "";
   export let resize: boolean | "auto" = true;
   export let fullHeight = false;
-  export let disabled = false;
-  export let spellcheck = false;
   let textarea: HTMLTextAreaElement;
 
   function handleAutosize() {
@@ -21,12 +16,7 @@
 <textarea
   bind:value
   bind:this={textarea}
-  {placeholder}
-  {disabled}
-  {name}
-  {id}
-  aria-label={id}
-  {spellcheck}
+  {...$$restProps}
   on:input={() => handleAutosize()}
   class={resize === true ? "resizeable" : ""}
   style={fullHeight === true ? "height: 100%;" : ""}

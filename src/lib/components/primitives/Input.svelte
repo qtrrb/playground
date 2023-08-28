@@ -1,12 +1,8 @@
 <script lang="ts">
-  export let name = "";
-  export let id = "";
-  export let placeholder = "";
   export let value = "";
-  export let disabled = false;
 </script>
 
-<input bind:value {name} {placeholder} {disabled} {id} aria-label={id} />
+<input bind:value {...$$restProps} />
 
 <style>
   input {
