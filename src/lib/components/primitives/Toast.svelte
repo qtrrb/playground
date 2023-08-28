@@ -1,11 +1,13 @@
 <script lang="ts">
-  import { onMount } from "svelte/internal";
+  import { onMount, get_current_component } from "svelte/internal";
   import { fly } from "svelte/transition";
 
   export let message = "";
   export let variant: "danger" | "warning" | "success" = "danger";
 
   let visible = false;
+
+  const thisToast = get_current_component();
 
   export function createToast() {
     new this({
@@ -21,6 +23,8 @@
     visible = true;
     await new Promise((r) => setTimeout(r, 3000));
     visible = false;
+    await new Promise((r) => setTimeout(r, 3000));
+    thisToast.$destroy();
   });
 </script>
 
