@@ -13,11 +13,7 @@
 {#if href}
   <a class="{size} {variant}" {href}><slot /></a>
 {:else}
-  <button
-    class="{size} {variant}"
-    {...$$restProps}
-    on:click><slot /></button
-  >
+  <button class="{size} {variant}" {...$$restProps} on:click><slot /></button>
 {/if}
 
 <style>
